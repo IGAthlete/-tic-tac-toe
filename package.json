@@ -1,0 +1,8 @@
+{
+  "name": "-tic-tac-toe",
+  "main": "app/game.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^7.2.0"
+  }
+}
