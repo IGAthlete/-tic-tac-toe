@@ -12,23 +12,22 @@ const INITIAL_GAME_STATE_MATRIX =
 
 const STRATEGIES = {
     stupid: (gameMatrixState) => {
-        let index = 4; //TB removed
         return index;
     },
 
     smart: (gameMatrixState) => {
-        let index = 2; //TB removed
         return index;
     }
 };
 
 let gameStateMatrix = INITIAL_GAME_STATE_MATRIX;
 let calculateNextComputerStep = STRATEGIES.stupid;
+const ALL_POSSIBLE_WIN_POSITIONS = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2] ];
 
 function checkWinner(gameMatrixState) {
     return "computer";
-    return "user";
-    return "nobody";
+    //return "user";
+   // return "nobody";
 }
 
 module.exports = {

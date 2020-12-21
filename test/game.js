@@ -34,8 +34,9 @@ describe('Game functions tests', function() {
              2,0,0,
              0,0,2];
 
-        assert.equals(checkWinner(userWinner), "user");
+        assert.equal(game.checkWinner(userWinner), "user");
     });
+
 
     it("Computer should be winner", async () => {
         const computerWinner =
@@ -43,7 +44,7 @@ describe('Game functions tests', function() {
              1,2,1,
              0,1,2];
 
-        assert.equals(checkWinner(computerWinner), "computer");
+        assert.equal(game.checkWinner(computerWinner), "computer");
     });
 
     it("Nobody is winner, game continues", async () => {
@@ -52,6 +53,6 @@ describe('Game functions tests', function() {
              1,0,1,
              2,1,1];
 
-        assert.equals(checkWinner(nobodyWinner), "nobody");
+        assert.equal(game.checkWinner(nobodyWinner), "nobody");
     });
 });
